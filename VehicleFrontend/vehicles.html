@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vehicles</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Vehicles</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="owners.html">Owners</a>
+    <a href="registrations.html">Registrations</a>
+  </nav>
+
+  <form id="vehicleForm">
+    <input type="text" id="make" placeholder="Make" required />
+    <input type="text" id="model" placeholder="Model" required />
+    <input type="text" id="year" placeholder="Year" required />
+    <button type="submit">Add Vehicle</button>
+  </form>
+
+  <h3>Vehicle List</h3>
+  <ul id="vehicleList"></ul>
+
+  <script src="vehicles.js"></script>
+</body>
+</html>

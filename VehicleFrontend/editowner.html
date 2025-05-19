@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Owner</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <h2>Edit Owner</h2>
+  <form id="editOwnerForm">
+    <h3>Owner Details</h3>
+    <input type="hidden" id="ownerId" />
+    <input type="hidden" id="registrationNumber" />
+    <div class="owner-details">
+      <input type="text" id="name" placeholder="Owner Name" required />
+      <input type="text" id="address" placeholder="Address" required />
+      <input type="text" id="phone" placeholder="Phone" required />
+      <button type="button" id="saveOwnerButton">Save Owner Details</button>
+    </div>
+
+    <h3>Registrations</h3>
+    <!-- Container for dynamically displaying multiple registrations -->
+    <div id="registrationList"></div>
+  </form>
+
+  <script src="editowner.js"></script>
+</body>
+</html>
+

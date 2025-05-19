@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Edit Registration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Edit Registration</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="owners.html">Owners</a>
+    <a href="vehicles.html">Vehicles</a>
+    <a href="registrations.html">Registrations</a>
+  </nav>
+
+  <form id="editRegistrationForm">
+    <input type="hidden" id="registrationId" />
+    <input type="hidden" id="vehicleId" />
+    <input type="text" id="ownerName" placeholder="Owner Name" required />
+    <input type="text" id="registrationNumber" placeholder="Registration Number" required />
+    <input type="datetime-local" id="registrationDate" required />
+    <input type="text" id="licenseNumber" placeholder="License Number" required />
+    <input type="text" id="vin" placeholder="VIN" required />
+    <input type="text" id="make" placeholder="Make" required />
+    <input type="text" id="model" placeholder="Model" required />
+    <input type="text" id="vehicleName" placeholder="Vehicle Name" required />
+    <input type="text" id="vehicleType" placeholder="Vehicle Type" required />
+    <button type="submit">Save Changes</button>
+  </form>
+
+  <script src="editregistration.js"></script>
+</body>
+</html>

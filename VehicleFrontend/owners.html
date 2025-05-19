@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Owners</title>
+  <link rel="stylesheet" href="owners.css" />
+</head>
+<body>
+  <h2>Owners</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="vehicles.html">Vehicles</a>
+    <a href="registrations.html">Registrations</a>
+  </nav>
+
+  <form id="ownerForm">
+    <h3>Owner Details</h3>
+    <input type="text" id="name" placeholder="Owner Name" required />
+    <input type="text" id="address" placeholder="Address" required />
+    <input type="text" id="phone" placeholder="Phone" required />
+
+    <h3>Registration Details</h3>
+    <input type="text" id="registrationNumber" placeholder="Registration Number" required />
+    <input type="date" id="registrationDate" placeholder="Registration Date" required />
+
+    <h3>Vehicle Details</h3>
+    <input type="text" id="licenseNumber" placeholder="License Number" required />
+    <input type="text" id="vin" placeholder="VIN" required />
+    <input type="text" id="make" placeholder="Make" required />
+    <input type="text" id="model" placeholder="Model" required />
+    <input type="text" id="vehicleName" placeholder="Vehicle Name" required />
+    <input type="text" id="vehicleType" placeholder="Vehicle Type" required />
+
+    <button type="submit">Add Owner</button>
+  </form>
+
+  <h3>Search Owners</h3>
+  <input type="text" id="searchQuery" placeholder="Search by name" />
+  <button id="searchButton">Search</button>
+
+  <h3>Owner List</h3>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Registrations</th>
+      </tr>
+    </thead>
+    <tbody id="ownerList">
+      <!-- Rows will be dynamically added here -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>

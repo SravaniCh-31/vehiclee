@@ -1,0 +1,56 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    color: #007bff;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Navigation Menu */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background: #007bff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #004085;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
